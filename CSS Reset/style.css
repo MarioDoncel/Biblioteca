@@ -1,0 +1,49 @@
+:root  {
+    --principal: #9c3;
+    --secundary: #f33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* RESPONSIVIDADE */
+
+/* ==== PRIMEIRO PADRÃO ==== */
+
+/* BIG DESKTOP */
+@media (min-width:1800px){
+}
+/* DESKTOP */
+@media (min-width:1200px), (max-width:1800px){
+}
+/* TABLET LANDSCAPE */
+@media (min-width:900px), (max-width:1200px){
+}
+/* TABLET PORTRAIT */
+@media  (min-width:600px), (max-width:1900px){
+}
+/* CELLPHONE */
+@media  (max-width:600px){
+}
+
+/* ==== SEGUNDO PADRÃO ==== */
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
