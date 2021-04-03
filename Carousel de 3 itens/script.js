@@ -53,25 +53,27 @@ populateMovies() // execuntado funcao de popular items inicial
 
 var timer // variavel declarada em separado para poder manipular o clearTimeout
 function moveRight(e) { //movendo para a direito apos 400ms
-    timer = setTimeout(() => { // 
+    clearInterval(timer)
+    timer = setInterval(() => { // 
     index++
     if (index >= posters.length) {
         index = 0
     }
     populateMovies()
-},400)
-    e.target.onmouseleave = () => {clearTimeout(timer)} // logica foi feita com onmouseenter portanto se retirado o mouse antes da execucao 
+},500)
+    e.target.onmouseleave = () => {clearInterval(timer)} // logica foi feita com onmouseenter portanto se retirado o mouse antes da execucao 
                                                         // a funcao é interrompida, evita que uma passada rapida de mouse execute a funcao
 }
 
 function moveLeft(e) {//movendo para a esquerda apos 400ms
-    timer = setTimeout(() => {
+    clearInterval(timer)
+    timer = setInterval(() => {
         index--
         if (index <= -3) {
             index = 2
         }
     populateMovies()
-},400)
-    e.target.onmouseleave = () => {clearTimeout(timer)} // logica foi feita com onmouseenter portanto se retirado o mouse antes da execucao 
+},500)
+    e.target.onmouseleave = () => {clearInterval(timer)} // logica foi feita com onmouseenter portanto se retirado o mouse antes da execucao 
                                                         // a funcao é interrompida, evita que uma passada rapida de mouse execute a funcao 
 }
