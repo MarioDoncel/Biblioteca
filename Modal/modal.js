@@ -1,9 +1,8 @@
-function modalOpen() {
+function modalOpen(content) {
     modalOverlay.classList.add('active')
-    modalContent.innerHTML =`
-    CONTEUDO DO MODAL
-    `
+    modalContent.innerHTML = content
 }
 function modalClose() {
     modalOverlay.classList.remove('active')
 }
+

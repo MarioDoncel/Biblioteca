@@ -40,5 +40,15 @@ const Mask ={
             style:'currency',
             currency:'USD'
         }).format(value/100) // Formatando para Dolar
-        }
+    },
+    zipCodeBRL(value) {
+        const formattedValue = value.replace(/\D/g, "").replace(/^(\d{5})(\d{3})/, "$1-$2");
+        
+        return formattedValue;
+    },
+    telephoneBRL(value) {
+        const formattedValue = value.replace(/\D/g, "").replace(/^(\d{2})(\d)/g, "($1) $2").replace(/(\d)(\d{4})$/, "$1-$2");
+        
+        return formattedValue;
+    },
 }
