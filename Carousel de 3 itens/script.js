@@ -53,6 +53,7 @@ populateMovies() // execuntado funcao de popular items inicial
 
 var timer // variavel declarada em separado para poder manipular o clearTimeout
 function moveRight(e) { //movendo para a direito apos 400ms
+    e.stopPropagation()
     clearInterval(timer)
     timer = setInterval(() => { // 
     index++
@@ -66,6 +67,7 @@ function moveRight(e) { //movendo para a direito apos 400ms
 }
 
 function moveLeft(e) {//movendo para a esquerda apos 400ms
+    e.stopPropagation()
     clearInterval(timer)
     timer = setInterval(() => {
         index--
