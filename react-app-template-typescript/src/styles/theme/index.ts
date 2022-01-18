@@ -2,10 +2,10 @@ import { colors } from "./colors";
 
 const theme = {
     color:{
-        primary:colors.BLUEPRIMARY,
-        primaryText:colors.BLUEPRIMAREYTEXT,
-        primaryDarker:colors.BLUEDARK,
-        backgroundApp:colors.BACKGROUNDGRADIENT
+        primary:colors.PRIMARY,
+        primaryText:colors.PRIMAREYTEXT,
+        primaryDarker:colors.PRIMARYDARKER,
+        backgroundApp:colors.BACKGROUND
     }
 }
 
